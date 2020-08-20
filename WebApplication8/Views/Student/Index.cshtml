@@ -1,0 +1,63 @@
+﻿@model IEnumerable<WebApplication8.Models.studInfo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Student List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-condensed table-striped" >
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StudentName)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfBirthInWords)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrevSchoolName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdmittedInClass)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdmissionDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StudentName)
+        </td>
+                <td>
+            @Html.DisplayFor(modelItem => item.DateOfBirth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateOfBirthInWords)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrevSchoolName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdmittedInClass)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdmissionDate)
+        </td>
+       
+        <td>
+            @Html.ActionLink("PrintPDF", "PrintPdfDetails", new { id = item.AdmissionNumber })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,162 @@
+﻿@model WebApplication8.Models.studInfo
+
+@{
+    ViewBag.Title = "Printpdf";
+}
+
+<h2>Printpdf</h2>
+
+<div>
+    <h4>studInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nationality)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nationality)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MotherTongue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MotherTongue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Religion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Religion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Caste)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Caste)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subCaste)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subCaste)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthPlace)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthPlace)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirthInWords)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirthInWords)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrevSchoolName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrevSchoolName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdmittedInClass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdmittedInClass)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdmissionDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdmissionDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Progress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Progress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Behaviour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Behaviour)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfSchoolLeaving)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfSchoolLeaving)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassFromLeft)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClassFromLeft)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CertRecDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CertRecDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReceivedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReceivedBy)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AdmissionNumber }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

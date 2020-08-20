@@ -1,0 +1,176 @@
+﻿@model WebApplication8.Models.studInfo
+
+@{
+    ViewBag.Title = "PrintId";
+}
+ 
+<center>
+    <div>
+    </div>
+    <div>
+        <div style="font-family:'Times New Roman';font-size:20px"><b>Cambridge High School</b></div>
+        <div style="font-family:'Times New Roman';font-size:20px"><b>Jalna Road,Cidco,</b></div>
+        <div style="font-family:'Times New Roman';font-size:20px"><b>Aurangabad.431001</b></div>
+    </div>
+    <u><h2 style="font-family:'Times New Roman';font-size:30px"><b>Leaving Certificate</b></h2></u>
+</center>
+<table style="border:1;border-bottom:none;border-left:none;border-right:none;"><tr><td></td></tr></table>
+<hr style="border: 1px solid;"/>
+<br/>
+<div>
+   <table style="width:50%;font-family:'Times New Roman';" class="table table-bordered table-condensed table-striped" >
+       <tr>
+           <th style="width:50%;font-size:18px">
+             Student Name 
+           </th>
+         
+           <td style="width:50%; vertical-align:middle;font-size:18px">
+               @Html.DisplayFor(model => model.StudentName)
+           </td>
+       </tr>
+       <tr>
+           <th style="width:50%;font-size:18px">
+               Nationality
+           </th>
+           <td style="width:50%; vertical-align:middle;font-size:18px">
+               @Html.DisplayFor(model => model.Nationality)
+           </td>
+       </tr>
+       <tr>
+           <th style="width:50%;font-size:18px">
+               Mother Tongue
+           </th>
+           <td style="width:50%; vertical-align:middle;font-size:18px">
+               @Html.DisplayFor(model => model.MotherTongue)
+           </td>
+       </tr>
+       <tr>
+           <th style="width:50%;font-size:18px">
+               Religion
+           </th>
+           <td style="width:50%; vertical-align:middle;font-size:18px">
+               @Html.DisplayFor(model => model.Religion)
+           </td>
+       </tr>
+       <tr>
+           <th style="width:50%;font-size:18px">
+               Caste
+           </th>
+           <td style="width:50%; vertical-align:middle;font-size:18px">
+               @Html.DisplayFor(model => model.Caste)
+           </td>
+       </tr>
+       <tr>
+           <th style="width:50%;font-size:18px">
+               subCaste
+           </th>
+           <td style="width:50%; vertical-align:middle;font-size:18px">
+               @Html.DisplayFor(model => model.subCaste)
+           </td>
+       </tr>
+       <tr>
+           <th style="width:50%;font-size:18px">
+               Birth Place
+           </th>
+           <td style="width:50%; vertical-align:middle;font-size:18px">
+               @Html.DisplayFor(model => model.BirthPlace)
+           </td>
+       </tr>
+       <tr>
+           <th style="width:50%;font-size:18px">
+               Date Of Birth
+           </th>
+           <td style="width:50%; vertical-align:middle;font-size:18px">
+               @Html.DisplayFor(model => model.DateOfBirth)
+           </td>
+       </tr>
+       <tr>
+           <th style="width:50%;font-size:18px">
+               Date Of Birth In Words
+           </th>
+           <td style="width:50%; vertical-align:middle;font-size:18px">
+               @Html.DisplayFor(model => model.DateOfBirthInWords)
+           </td>
+       </tr>
+       <tr>
+           <th style="width:50%;font-size:18px">
+               Previous School Name
+           </th>
+           <td style="width:50%; vertical-align:middle;font-size:18px">
+               @Html.DisplayFor(model => model.PrevSchoolName)
+           </td>
+       </tr>
+       <tr>
+           <th style="width:50%;font-size:18px">
+               Admitted In Class
+           </th>
+           <td style="width:50%; vertical-align:middle;font-size:18px">
+               @Html.DisplayFor(model => model.AdmittedInClass)
+           </td>
+       </tr>
+       <tr>
+           <th style="width:50%;font-size:18px">
+               Admission Date
+           </th>
+           <td style="width:50%; vertical-align:middle;font-size:18px">
+               @Html.DisplayFor(model => model.AdmissionDate)
+           </td>
+       </tr>
+       <tr>
+           <th style="width:50%;font-size:18px">
+               Progress
+           </th>
+           <td style="width:50%; vertical-align:middle;font-size:18px">
+               @Html.DisplayFor(model => model.Progress)
+           </td>
+       </tr>
+       <tr>
+           <th style="width:50%;font-size:18px">
+               Behaviour
+           </th>
+           <td style="width:50%; vertical-align:middle;font-size:18px">
+               @Html.DisplayFor(model => model.Behaviour)
+           </td>
+       </tr>
+       <tr>
+           <th style="width:50%;font-size:18px">
+               Date Of School Leaving
+           </th>
+           <td style="width:50%; vertical-align:middle;font-size:18px">
+               @Html.DisplayFor(model => model.DateOfSchoolLeaving)
+           </td>
+       </tr>
+       <tr>
+           <th style="width:50%;font-size:18px">
+               Class From Left
+           </th>
+           <td style="width:50%; vertical-align:middle;font-size:18px">
+               @Html.DisplayFor(model => model.ClassFromLeft)
+           </td>
+       </tr>
+    </table>
+    <table style="width:100%;font-family:'Times New Roman';">
+        <tr>
+            <th style="width:25%;font-size:18px">
+               Received Date
+            </th>
+            <td style="width:25%; vertical-align:middle;font-size:18px">
+                @Html.DisplayFor(model => model.CertRecDate)
+            </td>
+            <th style="width:25%;font-size:18px">
+                Received By
+            </th>
+            <td style="width:25%; vertical-align:middle;font-size:18px">
+                @Html.DisplayFor(model => model.ReceivedBy)
+            </td>
+
+
+        </tr>
+    </table>
+    
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AdmissionNumber }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
