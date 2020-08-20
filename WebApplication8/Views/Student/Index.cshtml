@@ -55,7 +55,7 @@
         </td>
        
         <td>
-            @Html.ActionLink("PrintPDF", "PrintPdfDetails", new { id = item.AdmissionNumber })
+            @Html.ActionLink("PrintPDF", "PrintPdfDetails", new { id = item.AdmissionNumber }, new { target = "_blank" })
         </td>
     </tr>
 }

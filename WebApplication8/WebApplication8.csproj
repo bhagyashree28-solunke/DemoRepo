@@ -187,6 +187,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Nationality.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\studData.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\StudentDbHelper.cs" />
     <Compile Include="Models\StudentDbModel.Context.cs">
